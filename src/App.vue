@@ -1,24 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-    <LineComponent :barWidth="barWidth" />
+    <Resume />
+    <!-- <LineComponent :barWidth="barWidth" />
     <span class="iconfont icon-duanxin"></span>
-    <RadarComponent class="radar" :radarData="radarData" :options="options" />
+    <RadarComponent class="radar" :radarData="radarData" :options="options" /> -->
   </div>
 </template>
 
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
-import RadarComponent from "./components/Radar.vue";
-import LineComponent from "./components/Line.vue";
+// import RadarComponent from "./components/Radar.vue";
+// import LineComponent from "./components/Line.vue";
+import Resume from "./screens/resume.vue";
 
 export default {
   name: "App",
   components: {
     // HelloWorld,
-    RadarComponent,
-    LineComponent
+    // RadarComponent,
+    // LineComponent,
+    Resume
   },
   data() {
     return {
@@ -62,27 +65,11 @@ export default {
 </script>
 
 <style>
-@import './assets/styles/iconfont.css';
+@import "./assets/styles/iconfont.css";
 .radar {
   background: #fff;
   width: 200px;
   height: 200px;
-}
-
-.bar {
-  width: 100px;
-  height: 10px;
-  background: #fff;
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.bar .bar-line {
-  width: 0px;
-  height: 10px;
-  background: rgba(179, 181, 198, 1);
-  border-radius: 2px;
-  transition: all 0.55s ease-out;
 }
 
 #app {
@@ -92,6 +79,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   background: #c9c9c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 html,
 body,
