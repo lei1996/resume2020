@@ -1,5 +1,5 @@
 <template>
-  <div class="project">
+  <div class="project" @click="gotoUrl()">
     <div class="backimg"></div>
     <div class="flex-box">
       <div class="name">{{ data.name }}</div>
@@ -17,6 +17,12 @@
 export default {
   props: {
     data: Object
+  },
+  methods: {
+    gotoUrl() {
+      if (!this.data.link) return;
+      window.open(this.data.link);
+    }
   }
 };
 </script>
@@ -31,13 +37,16 @@ export default {
   text-align: left;
   font-size: 11px;
   font-family: cursive;
-  height: 100%;
+  height: 97%;
+  box-shadow: 2px 3px 5px rgba(80, 86, 86, 0.5);
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+  user-select: none;
   /* background-position: 32% 19%; */
 }
 .backimg {
-  background: url("https://i.picsum.photos/id/377/322/170.jpg") no-repeat;
+  background: url("../assets/377-322x170.jpg") no-repeat;
   filter: blur(4px);
   position: absolute;
   top: 0;

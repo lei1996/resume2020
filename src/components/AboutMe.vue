@@ -5,8 +5,9 @@
       <div>3年前端经验</div>
       <div>熟练使用Angular/react/vue/jquery 开发页面</div>
       <div>拥有ionic webApp、 Flutter 开发android/ios app 经验</div>
-      <div>拥有一定的运维基础，会基础的管理服务器站点</div>
       <div>熟悉 websocket/http 的使用</div>
+      <div>拥有一定的运维基础，会基础的管理服务器站点</div>
+      <div>将前端项目打包进 Docker 运行</div>
     </div>
   </div>
 </template>

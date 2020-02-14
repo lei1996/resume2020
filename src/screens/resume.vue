@@ -2,7 +2,7 @@
   <div class="container">
     <div class="left">
       <div class="header-portrait">
-        <div class="img_box">
+        <div class="img_box" @click="gotoUrl()">
           <img class="img" src="../assets/logo.png" alt="" />
         </div>
         <div class="color_b"></div>
@@ -96,8 +96,13 @@ export default {
   components: {
     RadarComponent,
     AboutMe,
-    ProjectList,
+    ProjectList
     // LineComponent,
+  },
+  methods: {
+    gotoUrl() {
+      window.open("https://github.com/lei1996/resume2020");
+    }
   },
   data() {
     return {
@@ -107,10 +112,10 @@ export default {
           "Angular",
           "React",
           "Vue.js",
-          "Flutter",
-          "Jquery",
           "linux",
-          "asd"
+          "Jquery",
+          "Flutter",
+          "algorithm"
         ],
         datasets: [
           {
@@ -121,7 +126,7 @@ export default {
             pointBorderColor: "#fff",
             pointHoverBackgroundColor: "#fff",
             pointHoverBorderColor: "rgba(179,181,198,1)",
-            data: [75, 20, 85, 51, 68, 45, 27]
+            data: [75, 83, 73, 45, 68, 77, 27]
           }
         ]
       },
@@ -145,7 +150,7 @@ export default {
 .container {
   width: 1080px;
   margin-top: 40px;
-  background: #fff;
+  /* background: #fff; */
   display: flex;
 }
 
@@ -153,12 +158,13 @@ export default {
   flex: 1;
   /* background: red; */
   padding-bottom: 80px;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
-  border-right: 1px solid rgba(202, 199, 199, 0.3);
+  border-right: 1px solid #f8f9fb;
 }
 
 .left .img_box:hover {
@@ -269,7 +275,9 @@ export default {
 .right {
   flex: 2;
   /* display: flex; */
-  background: #f0f7f7;
+  background: #f5f6fa;
+  border-top-right-radius: 18px;
+  padding: 20px 0;
   /* background: yellow; */
 }
 
