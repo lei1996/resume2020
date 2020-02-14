@@ -18,7 +18,7 @@
 .about_me {
   background: #fff;
   border-radius: 18px;
-  width: 289px;
+  width: 341px;
   text-align: left;
   margin-left: 19px;
   padding: 20px 32px;

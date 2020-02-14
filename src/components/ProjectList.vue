@@ -2,12 +2,10 @@
   <div class="p-list_container">
     <span class="iconfont icon-xiangmu"></span> 项目
     <div class="list">
-      <swiper class="swipe">
-        <div v-for="(data, index) in datas" :key="index">
-          <swiper-slide>
-            <Project :data="data" />
-          </swiper-slide>
-        </div>
+      <swiper :options="swiperOption" class="swipe">
+        <swiper-slide v-for="(data, index) in datas" :key="index">
+          <Project :data="data" />
+        </swiper-slide>
       </swiper>
     </div>
   </div>
@@ -22,7 +20,18 @@ export default {
   },
   data() {
     return {
+      swiperOption: {
+          slidesPerView: 2,
+          // spaceBetween: 30,
+      },
       datas: [
+        {
+          name: "Flutter IM 在线聊天室APP",
+          time: "2020/01-至今",
+          detail:
+            "使用 Flutter 开发，通讯方式：socket_io_client状态 管理管理：provider",
+          xiangxi: "项目地址：https://github.com/lei1996/fiora-app-flutter"
+        },
         {
           name: "开心聊网页",
           time: "2018/09-2018/12",
@@ -40,7 +49,7 @@ export default {
           name: "区块链钱包",
           time: "2018/04-2018/05",
           detail:
-            "使用 ionic 3 开发webApp 区块链钱包。 下载地址，https://fir.im/bocaichain",
+            "使用 ionic 3 开发webApp 区块链钱包。 下载地址：https://fir.im/bocaichain",
           xiangxi: "负责项目主要开发工作。"
         }
       ]
@@ -53,14 +62,9 @@ export default {
 <style scoped>
 .list {
   display: flex;
-  width: 560px;
-}
-
-.swipe {
-  width: 100%;
+  width: 720px;
 }
 
 .p-list_container {
-  
 }
 </style>
