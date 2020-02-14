@@ -5,6 +5,7 @@
         <div class="img_box">
           <img class="img" src="../assets/logo.png" alt="" />
         </div>
+        <div class="color_b"></div>
         <div class="title">
           <div class="name">雷嘉宁</div>
           <div class="occupation">Web front end Engineer</div>
@@ -41,7 +42,78 @@
         </div>
       </div>
     </div>
-    <div class="right">2</div>
+    <div class="right">
+      <div class="about_me">
+        <span class="iconfont icon-ditu2"></span>自我介绍
+        <div class="about-me__content">
+          <div>3年前端经验</div>
+          <div>熟练使用Angular/react/vue/jquery 开发页面</div>
+          <div>拥有ionic webApp、 Flutter 开发android/ios app 经验</div>
+          <div>拥有一定的运维基础，会基础的管理服务器站点</div>
+          <div>熟悉 websocket/http 的使用</div>
+        </div>
+      </div>
+      <!-- <div class="project">
+        项目
+        <div>
+          <div>2018/09-2018/12 开心聊网页 （pc + web移动端）</div>
+          <div>React+mobx 构建的一个能够实时聊天的单页面SPA站点。</div>
+          <div>
+            负责项目主要开发工作。（项目构建到页面实现到对接接口到连接sdk收发消息，最后打包测试生产发布。）
+          </div>
+        </div>
+        <div>
+          <div>2018/05-2018/07 虚拟货币量化管理交易平台</div>
+          <div>使用 angular6 做的一个后台管理项目</div>
+          <div>
+            负责项目主要开发工作。
+          </div>
+        </div>
+        <div>
+          <div>2018/04-2018/05 区块链钱包</div>
+          <div>
+            使用 ionic 3 开发webApp 区块链钱包。
+            下载地址，https://fir.im/bocaichain
+          </div>
+          <div>
+            负责项目主要开发工作。
+          </div>
+        </div>
+      </div>
+      <div class="company">
+        公司
+        <div>
+          <div>2018/09-至今 金鼎园</div>
+          <div>互联网/电子商务</div>
+          <div>23k</div>
+          <div>负责web前端开发。与后端美工产品共同协同完成项目。</div>
+        </div>
+        <div>
+          <div>2018/02-07 长沙依磁网络科技有限公司</div>
+          <div>互联网/电子商务</div>
+          <div>12001-16000元/月</div>
+          <div>负责web前端开发。与后端美工产品共同协同完成项目。</div>
+        </div>
+        <div>
+          <div>2017/08-2018/01 湖南无为网电子商务有限公司</div>
+          <div>互联网/电子商务</div>
+          <div>6001-8000元/月</div>
+          <div>为企业定制开发后台管理系统，维护之前的老系统。使用第三方UI框架 material-ui 和 element-ui 完成业务.</div>
+        </div>
+      </div>
+      <div class="education">
+        教育
+        <div>
+          2017/10 - 2020/01 湖南航空工业职工工学院  计算机应用技术   大专
+        </div>
+        <div>
+          2013/09 - 2014/07 五一牛耳学院  电子信息科学与技术   其他
+        </div>
+        <div>
+          2010/09 - 2013/06 长沙市第十九中学  软件   高中
+        </div>
+      </div> -->
+    </div>
   </div>
 </template>
 
@@ -116,10 +188,11 @@ export default {
   align-items: center;
   flex-direction: column;
   position: relative;
+  border-right: 1px solid rgba(202, 199, 199, 0.3);
 }
 
 .left .img_box:hover {
-    box-shadow: 4px 4px 8px rgba(148, 145, 145, .6);
+  box-shadow: 4px 4px 8px rgba(148, 145, 145, 0.6);
 }
 .left .img_box {
   background: #fff;
@@ -127,13 +200,24 @@ export default {
   width: 150px;
   height: 150px;
   overflow: hidden;
-  box-shadow: 4px 4px 8px rgba(148, 145, 145, .3);
+  box-shadow: 4px 4px 8px rgba(148, 145, 145, 0.3);
   transition: all 0.25s ease-out;
   cursor: pointer;
   /* border: 4px solid #545050; */
   position: absolute;
   left: -40px;
   top: -40px;
+}
+
+.left .color_b {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(95, 85, 85, 0.48);
+  width: 225px;
+  height: 227px;
+  border-bottom-left-radius: 57px;
+  border-bottom-right-radius: 14px;
 }
 
 .left .title {
@@ -214,7 +298,22 @@ export default {
 
 .right {
   flex: 2;
-  background: yellow;
+  background: #c9c9c9;
+  /* background: yellow; */
+}
+
+.right .about_me {
+  background: #fff;
+  border-radius: 18px;
+  width: 289px;
+  text-align: left;
+  margin-left: 19px;
+  padding: 20px 32px;
+}
+
+.right .about-me__content {
+  margin-top: 10px;
+  font-size: 12px;
 }
 
 .iconfont {
