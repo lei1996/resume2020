@@ -31,6 +31,7 @@ export default {
   margin-left: 19px;
   font-size: 11px;
   font-family: cursive;
+  /* height: 100%; */
 }
 
 .flex-box {

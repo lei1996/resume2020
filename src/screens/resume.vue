@@ -268,6 +268,7 @@ export default {
 
 .right {
   flex: 2;
+  /* display: flex; */
   background: #f0f7f7;
   /* background: yellow; */
 }
