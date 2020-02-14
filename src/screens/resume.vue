@@ -43,43 +43,9 @@
       </div>
     </div>
     <div class="right">
-      <div class="about_me">
-        <span class="iconfont icon-ditu2"></span>自我介绍
-        <div class="about-me__content">
-          <div>3年前端经验</div>
-          <div>熟练使用Angular/react/vue/jquery 开发页面</div>
-          <div>拥有ionic webApp、 Flutter 开发android/ios app 经验</div>
-          <div>拥有一定的运维基础，会基础的管理服务器站点</div>
-          <div>熟悉 websocket/http 的使用</div>
-        </div>
-      </div>
-      <!-- <div class="project">
-        项目
-        <div>
-          <div>2018/09-2018/12 开心聊网页 （pc + web移动端）</div>
-          <div>React+mobx 构建的一个能够实时聊天的单页面SPA站点。</div>
-          <div>
-            负责项目主要开发工作。（项目构建到页面实现到对接接口到连接sdk收发消息，最后打包测试生产发布。）
-          </div>
-        </div>
-        <div>
-          <div>2018/05-2018/07 虚拟货币量化管理交易平台</div>
-          <div>使用 angular6 做的一个后台管理项目</div>
-          <div>
-            负责项目主要开发工作。
-          </div>
-        </div>
-        <div>
-          <div>2018/04-2018/05 区块链钱包</div>
-          <div>
-            使用 ionic 3 开发webApp 区块链钱包。
-            下载地址，https://fir.im/bocaichain
-          </div>
-          <div>
-            负责项目主要开发工作。
-          </div>
-        </div>
-      </div>
+      <AboutMe />
+      <Project />
+      <!-- 
       <div class="company">
         公司
         <div>
@@ -119,6 +85,8 @@
 
 <script>
 import RadarComponent from "../components/Radar.vue";
+import AboutMe from "../components/AboutMe.vue";
+import Project from "../components/Project.vue";
 // import LineComponent from "../components/Line.vue";
 
 export default {
@@ -126,7 +94,9 @@ export default {
   //     msg: String
   //   }
   components: {
-    RadarComponent
+    RadarComponent,
+    AboutMe,
+    Project,
     // LineComponent,
   },
   data() {
@@ -298,22 +268,8 @@ export default {
 
 .right {
   flex: 2;
-  background: #c9c9c9;
+  background: #f0f7f7;
   /* background: yellow; */
-}
-
-.right .about_me {
-  background: #fff;
-  border-radius: 18px;
-  width: 289px;
-  text-align: left;
-  margin-left: 19px;
-  padding: 20px 32px;
-}
-
-.right .about-me__content {
-  margin-top: 10px;
-  font-size: 12px;
 }
 
 .iconfont {
