@@ -44,7 +44,7 @@
     </div>
     <div class="right">
       <AboutMe />
-      <Project />
+      <ProjectList />
       <!-- 
       <div class="company">
         公司
@@ -86,7 +86,7 @@
 <script>
 import RadarComponent from "../components/Radar.vue";
 import AboutMe from "../components/AboutMe.vue";
-import Project from "../components/Project.vue";
+import ProjectList from "../components/ProjectList.vue";
 // import LineComponent from "../components/Line.vue";
 
 export default {
@@ -96,7 +96,7 @@ export default {
   components: {
     RadarComponent,
     AboutMe,
-    Project,
+    ProjectList,
     // LineComponent,
   },
   data() {
