@@ -26,3 +26,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 进入容器： docker exec -it containerID /bin/bash
+重启策略： docker update containerID --restart=always
