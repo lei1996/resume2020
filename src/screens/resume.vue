@@ -45,7 +45,7 @@
     <div class="right">
       <AboutMe />
       <ProjectList />
-      <Company />
+      <CompanyList />
       <!-- 
       <div class="company">
         公司
@@ -88,18 +88,15 @@
 import RadarComponent from "../components/Radar.vue";
 import AboutMe from "../components/AboutMe.vue";
 import ProjectList from "../components/ProjectList.vue";
-import Company from "../components/Company.vue";
+import CompanyList from "../components/CompanyList.vue";
 // import LineComponent from "../components/Line.vue";
 
 export default {
-  //   props: {
-  //     msg: String
-  //   }
   components: {
     RadarComponent,
     AboutMe,
     ProjectList,
-    Company
+    CompanyList
     // LineComponent,
   },
   methods: {
@@ -152,7 +149,7 @@ export default {
 <style scoped>
 .container {
   width: 1080px;
-  margin-top: 40px;
+  margin: 40px 0;
   /* background: #fff; */
   display: flex;
 }

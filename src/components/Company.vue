@@ -2,32 +2,22 @@
   <div class="company">
     <div class="company_box">
       <div class="company_flexbox">
-        <div class="name">金鼎园</div>
-        <div class="money">23k</div>
+        <div class="name">{{ data.name }}</div>
+        <div class="money">{{ data.money }}</div>
       </div>
-      <div class="time">2018/09-2019/12</div>
-      <div class="category">互联网/电子商务</div>
+      <div class="time">{{ data.time }}</div>
+      <div class="category">{{ data.category }}</div>
       <div class="details">
-        负责web前端开发。与后端美工产品共同协同完成项目。
+        {{ data.details }}
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// import Project from "./Project.vue";
-
 export default {
-  components: {
-    // Project
-  },
-  data() {
-    return {
-      //   swiperOption: {
-      //     slidesPerView: 2
-      //     // spaceBetween: 30,
-      //   },
-    };
+  props: {
+    data: Object
   }
 };
 </script>
@@ -39,30 +29,41 @@ export default {
 .company {
   display: flex;
   width: 720px;
-  margin-top: 20px;
 }
 .company .company_box {
   background: #272b2f;
   color: #fff;
-  padding: 37px 20px;
+  padding: 24px 20px;
   margin: 0 19px;
-  border-radius: 16px;
+  /* border-radius: 16px; */
   text-align: left;
+  width: 444px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 .company .name {
   font-weight: bold;
   font-size: 20px;
   font-family: "Noto Sans SC", sans-serif;
+  margin-left: 1px;
+  letter-spacing: 4px;
+  background: #4e5358;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+  padding: 0 4px;
+  padding-left: 9px;
+  padding-bottom: 2px;
 }
 .company .category {
   font-size: 13px;
   margin-top: 8px;
-  color: #f9403c;
+  /* color: #f9403c; */
 }
 .company .details {
   font-size: 12px;
-  color: #febc2f;
+  /* color: #febc2f; */
   margin-top: 2px;
+  max-width: 300px;
 }
 .company .money {
   background: #febc2c;
