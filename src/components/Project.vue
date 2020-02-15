@@ -33,7 +33,7 @@ export default {
   background: #3f4546;
   border-radius: 18px;
   padding: 36px 32px;
-  /* width: 289px; */
+  width: 341px;
   text-align: left;
   font-size: 11px;
   font-family: cursive;

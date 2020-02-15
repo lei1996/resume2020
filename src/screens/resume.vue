@@ -43,31 +43,13 @@
       </div>
     </div>
     <div class="right">
-      <AboutMe />
+      <div class="right_flex">
+        <AboutMe />
+        <Education />
+      </div>
       <ProjectList />
       <CompanyList />
-      <!-- 
-      <div class="company">
-        公司
-        <div>
-          <div>2018/09-至今 金鼎园</div>
-          <div>互联网/电子商务</div>
-          <div>23k</div>
-          <div>负责web前端开发。与后端美工产品共同协同完成项目。</div>
-        </div>
-        <div>
-          <div>2018/02-07 长沙依磁网络科技有限公司</div>
-          <div>互联网/电子商务</div>
-          <div>12001-16000元/月</div>
-          <div>负责web前端开发。与后端美工产品共同协同完成项目。</div>
-        </div>
-        <div>
-          <div>2017/08-2018/01 湖南无为网电子商务有限公司</div>
-          <div>互联网/电子商务</div>
-          <div>6001-8000元/月</div>
-          <div>为企业定制开发后台管理系统，维护之前的老系统。使用第三方UI框架 material-ui 和 element-ui 完成业务.</div>
-        </div>
-      </div>
+      <!--
       <div class="education">
         教育
         <div>
@@ -87,6 +69,7 @@
 <script>
 import RadarComponent from "../components/Radar.vue";
 import AboutMe from "../components/AboutMe.vue";
+import Education from "../components/Education.vue";
 import ProjectList from "../components/ProjectList.vue";
 import CompanyList from "../components/CompanyList.vue";
 // import LineComponent from "../components/Line.vue";
@@ -95,6 +78,7 @@ export default {
   components: {
     RadarComponent,
     AboutMe,
+    Education,
     ProjectList,
     CompanyList
     // LineComponent,
@@ -160,7 +144,7 @@ export default {
   padding-bottom: 80px;
   background: #fff;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   position: relative;
@@ -279,6 +263,11 @@ export default {
   border-top-right-radius: 18px;
   padding: 20px 0;
   /* background: yellow; */
+}
+
+.right .right_flex {
+  display: flex;
+  margin: 0 19px;
 }
 
 .iconfont {
