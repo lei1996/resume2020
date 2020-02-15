@@ -46,7 +46,7 @@ export default {
   /* background-position: 32% 19%; */
 }
 .backimg {
-  background: url("../assets/377-322x170.jpg") no-repeat;
+  background: url("../assets/377-341x164.jpg") no-repeat;
   filter: blur(4px);
   position: absolute;
   top: 0;

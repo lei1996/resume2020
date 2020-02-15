@@ -173,7 +173,7 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
-  background: rgba(95, 85, 85, 0.48);
+  background: rgba(100, 111, 125, 0.44);
   width: 225px;
   height: 227px;
   border-bottom-left-radius: 57px;
